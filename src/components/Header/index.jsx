@@ -10,23 +10,12 @@ import {
   MobileNavWrapper,
   CloseIcon,
 } from "./Header.Styled";
-
+import { navItems } from './constants';
 import { Link } from "react-scroll";
-
-const navItems = [
-  { name: "Home", route: "#home", id: "home" },
-  { name: "Deals", route: "#deals", id: "deals" },
-  { name: "New Arrivals", route: "#new-arrivals", id: "new-arrivals" },
-  { name: "Packages", route: "#packages", id: "packages" },
-  { name: "Sign in", route: "#sign-in", id: "sign-in" },
-  { name: "Sign up", route: "#sign-up", id: "sign-up" },
-];
 
 const Header = () => {
   const [active, setActive] = useState(navItems[0].route);
-
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {

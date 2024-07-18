@@ -19,7 +19,7 @@ export const DealsContainer = styled.div`
   gap: 20px;
   display: flex;
   width: 100%;
-  max-width: 96.5%;
+  max-width: 97.5%;
 
   @media (max-width: 1024px) {
     flex-direction: column;
@@ -271,6 +271,7 @@ export const LargeImage = styled.img`
   aspect-ratio: 0.76;
   object-fit: cover;
   width: 64%;
+  min-width: 64%;
   flex-grow: 1;
 
   @media (max-width: 1024px) {
@@ -315,6 +316,7 @@ export const ActiveDot = styled(Dot)`
   border: 1px solid #000;
   padding: 8px;
   position: relative;
+  cursor:pointer;
 
   &::after {
     content: "";
@@ -330,5 +332,6 @@ export const ActiveDot = styled(Dot)`
 `;
 
 export const InactiveDot = styled(Dot)`
+  cursor:pointer;
   background-color: #b6b6b6;
 `;
